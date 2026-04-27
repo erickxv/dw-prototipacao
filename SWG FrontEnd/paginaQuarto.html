@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <title>Quarto</title>
+</head>
+<body class="bg-dark">
+    <form action="" class="container bg-light p-4">
+        <label for="" class="form-label mb-4"><h2>Cadastro de Quarto</h2></label>
+        <div class="row g-3 bg-secondary bg-opacity-10">
+            <div class="col-md-4">
+                <label for="nome" class="form-label">Numero do Quarto</label>
+                <input type="text" name="numero-quarto" id="numero-quarto" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label for="number" class="form-label">Andar</label>
+                <input type="number" name="andar" id="andar" class="form-control">
+            </div>
+                <div class="col-md-4">
+                <label for="number" class="form-label">Status</label>
+                <select name="status" id="status" class="form-select">
+                    <option value="">Selecione</option>
+                </select>
+            </div>
+            <div class="col-md-12">
+                <label for="number" class="form-label">Tipo de Quarto</label>
+                <select name="tipo-quarto" id="tipo-quarto" class="form-select">
+                    <option value="">Selecione</option>
+                </select>
+            </div>
+            <div class="col mb-3">
+                <div class="d-flex justify-content-end gap-1">
+                    <button class="btn btn-dark" type="submit">Salvar</button>
+                    <button class="btn btn-dark" type="submit">Cancelar</button>
+                    <button class="btn btn-dark" type="button">Limpar</button>
+                </div>
+            </div>    
+        </div>
+    </form>
+    <div class="container bg-light p-4">
+    <label for="" class="form-label"><h2>Quarto</h2></label>
+    <hr>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped caption-top">
+            <caption>
+                Lista de Quartos
+            </caption>
+            <thead class="table-dark">
+                <tr class="text-center">
+                    <th>Numero Quarto</th>
+                    <th>Andar</th>
+                    <th>Status</th>
+                    <th>Tipo de Quarto</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <td>Quarto Nº101</td>
+                    <td>1º</td>
+                    <td>Ocupado</td>
+                    <td>Luxo Casual</td>
+                </tr>
+                <tr>
+                    <td>Quarto Nº102</td>
+                    <td>1º</td>
+                    <td>Vago</td>
+                    <td>Solteiro</td>
+                </tr>
+                <tr>
+                    <td>Quarto Nº201</td>
+                    <td>2º</td>
+                    <td>Vago</td>
+                    <td>Suíte Master</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <div class="">
+            <div class="d-flex justify-content-end gap-1">
+                <button class="btn btn-dark" type="submit">Inserir</button>
+                <button class="btn btn-dark" type="submit" disabled>Deletar</button>
+                <button class="btn btn-dark" type="button" disabled>Alterar</button>
+            </div>
+        </div>    
+</div>
+</body>
+</html>

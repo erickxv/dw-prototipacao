@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <title>Relatório</title>
+</head>
+<body class="bg-dark">
+    <form action="" class="container bg-light p-4">
+        <label class="form-label mb-3"><h2>Cadastro de Estadia</h2></label>
+        <div class="row g-3 bg-secondary bg-opacity-10">
+            <div class="col-md-4">
+                <label for="reserva" class="form-label">Reserva</label>
+                <div class="input-group align-items-center mb-3">
+                    <input type="text" name="reserva" id="reserva" class="form-control" placeholder="Buscar...">
+                <button class="btn btn-dark">Buscar</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="quarto" class="form-label">Quarto</label>
+                <select name="quarto" id="quarto" class="form-select">
+                    <option value="">Selecionar</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="funcionario" class="form-label">Funcionário</label>
+                <select name="funcionario" id="funcionario" class="form-select">
+                    <option value="">Selecionar</option>
+                </select>
+            </div>
+            <hr>
+            <div class="d-flex align-items-center">
+                <label for="" class="form-label col-md-2 mb-1">Check-In</label>
+                <input type="datetime-local" class="form-control" name="check-in" id="check-in">
+            </div>
+            <div class="d-flex align-items-center mb-2">
+                <label for="" class="form-label col-md-2 mb-1">Check-Out</label>
+                <input type="datetime-local" class="form-control" name="check-in" id="check-in">
+            </div>
+            <div class="d-flex align-items-center mb-3 col-md-3">
+                <label class="form-label col-md-12 mb-1 me-1">Valor Total da Estadia</label>
+                <input class="form-control col-md-1" readonly value="125">
+                <span class="input-group-text">R$</span>
+            </div>
+            <div class="col mb-3">
+                <div class="d-flex justify-content-end gap-2">
+                    <button class="btn btn-dark" type="submit">Salvar</button>
+                    <button class="btn btn-dark" type="submit">Cancelar</button>
+                    <button class="btn btn-dark" type="button">Limpar</button>
+                </div>
+            </div> 
+        </div>
+    </form>
+    <div class="container bg-light p-4">
+    <label for="" class="form-label"><h2>Estadia</h2></label>
+    <hr>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped caption-top">
+            <caption>
+                Lista de Estadia
+            </caption>
+            <thead class="table-dark">
+                <tr class="text-center">
+                    <th>Reserva</th>
+                    <th>Quarto</th>
+                    <th>Funcionário</th>
+                    <th>Check-In</th>
+                    <th>Check-Out</th>
+                    <th>Valor Total</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <td>Reserva 01</td>
+                    <td>Quarto Nº101</td>
+                    <td>Ronaldo</td>
+                    <td>01/03/2026</td>
+                    <td>05/03/2026</td>
+                    <td>200,00</td>
+                </tr>
+                <tr>
+                    <td>Reserva 02</td>
+                    <td>Quarto Nº101</td>
+                    <td>Astolfo</td>
+                    <td>06/03/2026</td>
+                    <td>10/03/2026</td>
+                    <td>500,00</td>
+                </tr>
+                <tr>
+                    <td>Reserva 03</td>
+                    <td>Quarto Nº201</td>
+                    <td>Daniel</td>
+                    <td>01/04/2026</td>
+                    <td>01/05/2026</td>
+                    <td>2000,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <div class="">
+            <div class="d-flex justify-content-end gap-2">
+                <button class="btn btn-dark" type="submit">Inserir</button>
+                <button class="btn btn-dark" type="submit" disabled>Deletar</button>
+                <button class="btn btn-dark" type="button" disabled>Alterar</button>
+            </div>
+        </div>    
+</div>
+
+
+</body>
+</html>
